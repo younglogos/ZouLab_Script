@@ -1,0 +1,258 @@
+
+
+
+%% Intialize parameters
+clear all; clc;
+% Movie loading path
+basepath  = 'X:\91 Data and analysis\YJunqi\Screening method\Stable HEK293T cell line_ArcLight\20210708 Resting potential and sensitivity test\Dish2\cell3';
+subfolder = '\174653_ArcLight_slowStep';
+pathname = [basepath subfolder];
+ 
+% constants
+movname = '\movie.bin';
+ncol = 176;         % x
+nrow = 96;          % y
+camera_bias = 395.3;          % background due to camera bias (100 for bin 1x1)
+dt_mov = 0.9452;    % exposure time in millisecond (1058Hz)
+DAQname = '\movie_DAQ.txt';
+dnsamp = 20;        % downsampling rate = DAQ rate/camera rate
+DAQStart = 60001;    % DAQ steps start at this datapoint (included)
+frmStart = 3002;     % Movie steps start at this frame (included)
+frmPer = 3000;      % frames period
+frmCyc = 5;        % number of cycles
+frmWindow = 800;    % number of frames to calculate time constants
+frmWindow_up = 800;    % number of frames to calculate time constants
+frmWindow_dn = 800;
+% load bin movie
+fname = [pathname movname];
+[mov, nframes] = readBinMov(fname, nrow, ncol);
+mov = double(mov);
+mov = mov-camera_bias;      % remove camera bias
+
+% Set up a time axis for movie
+t_mov = [0:size(mov,3)-1]*dt_mov/10^3;      % camera time axis in second
+
+% Plot the raw whole-field intensity of the movie.
+intens = squeeze(mean(mean(mov)));
+figure(1)
+plot(intens)
+xlabel('Frame number')
+ylabel('Whole-field Intensity')
+
+%% Remove baseline drifts. rem_pbleach calculates the minimum values in a
+% sliding window, and then performs linear interpolation to make a smooth
+% photobleaching trace.  The raw intensity is divided element-wise by the photobleaching trace.
+% This function removes any baseline drift, not just photobleaching.
+% The smoothing window should exceed the interval between stimuli.
+[intensN, pbleach] = rem_pbleach(intens, frmPer*25+1);
+% figure(2)
+% plot(t_mov, intensN)
+% xlabel('Time')
+% ylabel('Normalized intensity')
+pbleach = pbleach/max(pbleach); % Normalize the pbleach trace to the maximum value
+
+% Correct the movie for photobleaching
+mov_remBleach = mov./repmat(reshape(pbleach, 1, 1, nframes), [nrow, ncol, 1]);
+
+% Look at the average of the movie
+img = mean(mov_remBleach, 3);
+% figure(3)
+% imshow(img, [], 'InitialMagnification', 'fit')
+
+%% select ROI for analysis
+[~, intens] = clicky(mov_remBleach, img, 'Select only 1 ROI, right click when done');
+bkg = mean(intens(:,2));
+background_reference=sort(reshape(mean(mov,3),ncol*nrow,1));
+background_reference=mean(background_reference(round(0.01*length(background_reference)):round(0.05*length(background_reference))))
+intens_bkg=background_reference;
+intens_bkg=bkg;
+intens_fluo = intens(:,1)-intens_bkg;
+% save clicky figure
+saveas(gca,[pathname '\clicky analysis.fig']);
+saveas(gca,[pathname '\clicky analysis.png']);
+
+% load DAQ data
+tmp = importdata([pathname DAQname]);   % import data 
+data = tmp.data;                    % get array
+Vm = data(:,2)*100;                 % Vm in millivolt, column vector
+dt_daq = dt_mov/dnsamp;             % DAQ dt in millisecond
+t_daq = [0:length(Vm)-1]*dt_daq/10^3;       % DAQ time axis in second
+
+%% Kinetic analysis
+% average of cycles: treat rise and fall separately
+t_window = (0:frmWindow-1)*dt_mov;                    % millisecond
+% falling exponential
+dnStart = frmStart + frmPer*(0:frmCyc-1);       % marks the beginning
+indmat = repmat(dnStart',1,frmWindow) + repmat(0:frmWindow-1,frmCyc,1);
+dnIntensMat = intens_fluo(indmat);                   % all traces
+dnIntens = mean(dnIntensMat);                   % average over periods
+fdn_min = mean(dnIntens(end-20:end));           % minimal value
+fdn_max = max(dnIntens);                        % maximum value
+fdn = (dnIntens-fdn_min)/(fdn_max-fdn_min);     % normalize response to 0-100%
+% rising exponential
+upStart = frmStart + frmPer*(0.5:frmCyc-0.5);   % marks the beginning
+indmat = repmat(upStart',1,frmWindow) + repmat(0:frmWindow-1,frmCyc,1);
+upIntensMat = intens_fluo(indmat);                   % all traces
+upIntens = mean(upIntensMat);                   % average over periods
+fup_max = mean(upIntens(end-20:end));           % maximum value
+fup_min = min(upIntens);                        % minimal value
+fup = (upIntens-fup_min)/(fup_max-fup_min);     % normalize response to 0-100%
+
+% the built-in library function for an exponential assumens the form
+% y = a*exp(b*x).  Values should be positive, so a > 0.  Photobleaching
+% will always be a decaying exponential, so b < 0.
+
+% falling expential
+Max = [2, 0, 2, 0];     % upper bound for [a,b,c,d]
+Min = [0, -Inf, -2, -Inf];    % lower bound for [a,b,c,d]
+Start = [max(fdn), -1, 0, -.1];   % starting guess for [a,b,c,d]
+% fit function
+F = fit(t_window',fdn','exp2','StartPoint',Start,'Lower',Min,'Upper',Max);
+fitTraceDn = F.a*exp(F.b*t_window)+F.c*exp(F.d*t_window);     % the fit function
+% calculate tau and coefficients
+tauDn1 = -1/F.b;
+tauDn2 = -1/F.d;
+A1_dn = F.a/(F.a+F.c);
+A2_dn = F.c/(F.a+F.c);
+
+% rising expential
+ftemp = 1-fup;          % invert to falling expential
+Max = [2, 0, 2, 0];     % upper bound for [a,b,c,d]
+Min = [0, -Inf, 0, -Inf];    % lower bound for [a,b,c,d]
+Start = [max(ftemp), -1, 0, -.1];   % starting guess for [a,b,c,d]
+% fit function
+F = fit(t_window',ftemp','exp2','StartPoint',Start,'Lower',Min,'Upper',Max);
+fitTraceUp = 1 - (F.a*exp(F.b*t_window)+F.c*exp(F.d*t_window));     % the fit function
+% calculate coefficients
+tauUp1 = -1/F.b;
+tauUp2 = -1/F.d;
+A1_up = F.a/(F.a+F.c);
+A2_up = F.c/(F.a+F.c);
+
+%% Sensitivity analysis (?F/F per 100mV)
+% Set up time axis under a step voltage change (-70mV to +30mV)
+t_step = (0:frmPer-1)*dt_mov;                       % millisecond
+StepdnStart = dnStart -1;                           % marks the step beginning
+inStepmat = repmat(StepdnStart',1,frmPer) + repmat(0:frmPer-1,frmCyc,1);
+StepIntensMat = intens_fluo(inStepmat);             % all step traces 
+StepIntens = mean(StepIntensMat);                   % average over periods
+SteplowIntens = mean(StepIntens(1480:1500));          % average the steady state low fluorescence
+StephiIntens = mean(StepIntens(2980:3000));           % average the steady state high fluorescence  
+SquareSens = (StephiIntens-SteplowIntens)/StephiIntens; % Square sensitivity per 100mV
+
+%% Plot kinetics results
+fig = figure(4);
+set(fig,'units','normalized','outerposition',[0 0 1 1]);    % max window
+% plot voltage trace
+subplot(3,4,1:4);
+plot(t_daq, Vm);
+xlabel('time (s)'); ylabel('V_m (mV)');
+axis tight;
+
+% plot camera trace
+subplot(3,4,5:8);
+plot(t_mov, intens_fluo);
+xlabel('time (s)'); ylabel('Intensity');
+axis tight;
+
+% plot falling exponential fit results
+% plot traces
+subplot(3,4,9);
+plot(t_window, dnIntensMat');
+axis tight;
+% plot average and fit
+subplot(3,4,10);
+plot(t_window,fdn,'.','Color','k'); hold on;    % average trace
+plot(t_window,fitTraceDn,'Color','b');          % fit curve
+title({'normalized F/F_0';
+    'F(t) = A*exp(-t/\tau_1) + B*exp(-t/\tau_2)';
+    ['\tau_1 = ',num2str(tauDn1,3),' ms,  \tau_2 = ',num2str(tauDn2,3),' ms'];
+    ['A1 = ', num2str(A1_dn,2), ',  A2 = ',num2str(A2_dn,2)]});
+xlabel('time (ms)'); ylabel('Normalized');
+legend('data','fit')
+axis tight;
+
+% plot rising exponential fit results
+% plot traces
+subplot(3,4,11);
+plot(t_window, upIntensMat');
+axis tight;
+% plot average and fit
+subplot(3,4,12);
+plot(t_window,fup,'.','Color','k'); hold on;        % average trace
+plot(t_window,fitTraceUp,'Color','b');              % fit curve
+title({'normalized F/F_0';
+    'F(t) = 1 - A*exp(-t/\tau_1) + B*exp(-t/\tau_2)';
+    ['\tau_1 = ',num2str(tauUp1,3),' ms,  \tau_2 = ',num2str(tauUp2,3),' ms'];
+    ['A1 = ', num2str(A1_up,2), ',  A2 = ',num2str(A2_up,2)]});
+xlabel('time (ms)'); ylabel('Normalized');
+legend('data','fit','Location','southeast');
+axis tight;
+
+% save F-V figure
+saveas(gca,[pathname '\kinetic analysis.fig']);
+saveas(gca,[pathname '\kinetic analysis.png']);
+
+%% plot sensitivity results
+fig = figure(5);
+set(fig,'units','normalized','outerposition',[0 0 1 1]);    % max window
+
+% plot voltage trace
+subplot(3,4,1:4);
+plot(t_daq, Vm);
+xlabel('time (s)'); ylabel('V_m (mV)');
+axis tight;
+
+% plot camera trace
+subplot(3,4,5:8);
+plot(t_mov, intens_fluo);
+xlabel('time (s)'); ylabel('Intensity');
+axis tight;
+
+% plot all step traces
+figure(5);
+subplot(3,4,9:10);
+plot(t_step, StepIntensMat');
+xlabel('time (ms)'); ylabel('Intensity');
+axis tight;
+
+% plot average and calculate the sensitivity per 100mV
+subplot(3,4,11:12);
+plot(t_step, StepIntens');
+[xData, yData] = prepareCurveData( [], StepIntens(225:400));
+ft = fittype( 'poly1' );
+[fitresult, gof] = fit( xData, yData, ft );
+RMSE=gof.rmse;
+SNR = abs(mean(StepIntens(780:800))-mean(StepIntens(1580:1600)))./(RMSE);
+title({['? F/F  = - ',num2str(SquareSens*100,4),' % SNR = ' num2str(SNR) ];});
+xlabel('time (ms)'); ylabel('Intensity');
+axis tight;
+%saveas(gca,[pathname '\step sensitivity analysis_small.fig']);
+%saveas(gca,[pathname '\step sensitivity analysis.png']);
+% save step sensitivity figure
+saveas(gca,[pathname '\step sensitivity analysis.fig']);
+saveas(gca,[pathname '\step sensitivity analysis.png']);
+%% Write a xlsx file
+xlswrite([pathname '\0analysis.xlsx'],{'Sensitivity', 'tau_1', 'A1','tau_2','A2','tau_3','B1','tau_4','B2','Brightness','SNR'},'Average','A1:K1');
+xlswrite([pathname '\0analysis.xlsx'],SquareSens*-100,'Average','A2');
+xlswrite([pathname '\0analysis.xlsx'],tauDn1,'Average','B2');
+xlswrite([pathname '\0analysis.xlsx'],A1_dn,'Average','C2');
+xlswrite([pathname '\0analysis.xlsx'],tauDn2,'Average','D2');
+xlswrite([pathname '\0analysis.xlsx'],A2_dn,'Average','E2');
+xlswrite([pathname '\0analysis.xlsx'],tauUp1,'Average','F2');
+xlswrite([pathname '\0analysis.xlsx'],A1_up,'Average','G2');
+xlswrite([pathname '\0analysis.xlsx'],tauUp2,'Average','H2');
+xlswrite([pathname '\0analysis.xlsx'],A2_up,'Average','I2');
+xlswrite([pathname '\0analysis.xlsx'],StephiIntens','Average','J2');
+xlswrite([pathname '\0analysis.xlsx'],SNR','Average','K2');
+%%
+% a = mov(:,:,[640:800 1040:1200]);
+% d = mov(:,:,[840:1000 1240:1400]);
+% a = a+400;
+% d = d+400;
+% aimg = mean(a,3);
+% dimg = mean(d,3);
+% imwrite(uint16(aimg),[pathname '\-70mV.tif'],'WriteMode', 'append',  'Compression','none')
+% imwrite(uint16(dimg),[pathname '\+30mV.tif'],'WriteMode', 'append',  'Compression','none')
+
+
