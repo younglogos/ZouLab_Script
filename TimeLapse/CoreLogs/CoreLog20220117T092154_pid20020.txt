@@ -1,0 +1,874 @@
+2022-01-17T09:21:54.785976 tid20176 [IFO,LogManager] Enabled primary log file X:\91 Data and analysis\YJunqi\Script\Dual color\CoreLogs\CoreLog20220117T092154_pid20020.txt
+2022-01-17T09:21:54.787976 tid20176 [IFO,App] User: ZouOptics
+2022-01-17T09:21:54.787976 tid20176 [IFO,App] Host: ZouOptics-PC
+2022-01-17T09:21:54.787976 tid20176 [IFO,App] MM Studio version: 2.0.0-gamma1 20201108
+2022-01-17T09:21:54.787976 tid20176 [IFO,App] MMCore version 10.1.1
+2022-01-17T09:21:54.787976 tid20176 [IFO,App] Device API version 69, Module API version 10
+2022-01-17T09:21:54.787976 tid20176 [IFO,App] Operating System: Windows 7 (amd64) 6.1
+2022-01-17T09:21:54.787976 tid20176 [IFO,App] JVM: Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_152, 64-bit
+2022-01-17T09:21:55.334007 tid29192 [IFO,App] Found plugin org.micromanager.display.inspector.internal.panels.intensity.IntensityInspectorPanelPlugin@3a56a3cf
+2022-01-17T09:21:55.334007 tid29192 [IFO,App] Found plugin org.micromanager.display.inspector.internal.panels.metadata.SummaryMetadataInspectorPanelPlugin@50e9f1d4
+2022-01-17T09:21:55.334007 tid29192 [IFO,App] Found plugin org.micromanager.display.inspector.internal.panels.metadata.PlaneMetadataInspectorPanelPlugin@19cc08b
+2022-01-17T09:21:55.334007 tid29192 [IFO,App] Found plugin org.micromanager.display.inspector.internal.panels.comments.CommentsInspectorPanelPlugin@4bac3667
+2022-01-17T09:21:55.335007 tid29192 [IFO,App] Found plugin org.micromanager.display.overlay.internal.overlays.PatternOverlayPlugin@3c6c996f
+2022-01-17T09:21:55.335007 tid29192 [IFO,App] Found plugin org.micromanager.display.inspector.internal.panels.overlays.OverlaysInspectorPanelPlugin@16d99f8b
+2022-01-17T09:21:55.335007 tid29192 [IFO,App] Found plugin org.micromanager.display.overlay.internal.overlays.ScaleBarPlugin@f4b1ada
+2022-01-17T09:21:55.335007 tid29192 [IFO,App] Found plugin org.micromanager.display.overlay.internal.overlays.TimestampPlugin@480fea4f
+2022-01-17T09:21:55.335007 tid29192 [IFO,App] Found plugin GaussianTrack_@1070a5c0
+2022-01-17T09:21:55.335007 tid29192 [IFO,App] Found plugin PMQI.AutoWB@2aafd7a6
+2022-01-17T09:21:55.336007 tid29192 [IFO,App] Found plugin ch.epfl.leb.autolase.AutoLasePlugin@3fe43996
+2022-01-17T09:21:55.338007 tid29192 [IFO,App] Found plugin com.asiimaging.CRISPv2.ASI_CRISP_V2@6e1f2399
+2022-01-17T09:21:55.338007 tid29192 [IFO,App] Found plugin com.imaging100x.tracker.TrackerPlugin@70a99f45
+2022-01-17T09:21:55.338007 tid29192 [IFO,App] Found plugin de.embl.rieslab.emu.EMUPlugin@452e03dd
+2022-01-17T09:21:55.338007 tid29192 [IFO,App] Found plugin edu.ucsf.valelab.mmclearvolumeplugin.CVPlugin@318f9732
+2022-01-17T09:21:55.340007 tid29192 [IFO,App] Found plugin edu.umassmed.pgfocus.pgFocus@2ff15138
+2022-01-17T09:21:55.341007 tid29192 [IFO,App] Found plugin org.micromanager.CRISP.CRISP@1fa74822
+2022-01-17T09:21:55.341007 tid29192 [IFO,App] Found plugin org.micromanager.acquiremultipleregions.AcquireMultipleRegions@21a76c9f
+2022-01-17T09:21:55.341007 tid29192 [IFO,App] Found plugin org.micromanager.acquisition.internal.DefaultMDAPlugin@4fa8102
+2022-01-17T09:21:55.344008 tid29192 [IFO,App] Found plugin org.micromanager.asidispim.ASIdiSPIM@4996755f
+2022-01-17T09:21:55.344008 tid29192 [IFO,App] Found plugin org.micromanager.assembledata.AssembleData@5fb716e
+2022-01-17T09:21:55.346008 tid29192 [IFO,App] Found plugin org.micromanager.autofocus.Autofocus@1ed9a98
+2022-01-17T09:21:55.347008 tid29192 [IFO,App] Found plugin org.micromanager.autofocus.AutofocusDuo@44b2c5d4
+2022-01-17T09:21:55.347008 tid29192 [IFO,App] Found plugin org.micromanager.autofocus.AutofocusTB@aa68d4a
+2022-01-17T09:21:55.349008 tid29192 [IFO,App] Found plugin org.micromanager.autofocus.HardwareFocusExtender@45452837
+2022-01-17T09:21:55.354008 tid29192 [IFO,App] Found plugin org.micromanager.autofocus.OughtaFocus@38792182
+2022-01-17T09:21:55.356008 tid29192 [IFO,App] Found plugin org.micromanager.channelcorrector.ChannelCorrector@8a2b7fa
+2022-01-17T09:21:55.361009 tid29192 [IFO,App] Found plugin org.micromanager.display.internal.gearmenu.CopyToImageJItem@77b6cbdd
+2022-01-17T09:21:55.361009 tid29192 [IFO,App] Found plugin org.micromanager.display.internal.gearmenu.ExportImagesItem@d7a4cd5
+2022-01-17T09:21:55.361009 tid29192 [IFO,App] Found plugin org.micromanager.display.internal.gearmenu.LineProfileItem@5b4ebeb1
+2022-01-17T09:21:55.361009 tid29192 [IFO,App] Found plugin org.micromanager.duplicator.DuplicatorPlugin@5c1b63df
+2022-01-17T09:21:55.361009 tid29192 [IFO,App] Found plugin org.micromanager.hcs.HCSPlugin@1d32a3a2
+2022-01-17T09:21:55.362009 tid29192 [IFO,App] Found plugin org.micromanager.imageflipper.FlipperPlugin@63c1cf59
+2022-01-17T09:21:55.363009 tid29192 [IFO,App] Found plugin org.micromanager.intelligentacquisition.IntelligentAcquisition@3836c5b7
+2022-01-17T09:21:55.363009 tid29192 [IFO,App] Found plugin org.micromanager.magellan.internal.main.Magellan@55607eef
+2022-01-17T09:21:55.366009 tid29192 [IFO,App] Found plugin org.micromanager.micronuclei.MicroNucleiPlugin@1c6ec9a7
+2022-01-17T09:21:55.366009 tid29192 [IFO,App] Found plugin org.micromanager.multicamera.MultiCamera@4a2f5bc3
+2022-01-17T09:21:55.366009 tid29192 [IFO,App] Found plugin org.micromanager.multichannelshading.MultiChannelShading@571f2e53
+2022-01-17T09:21:55.367009 tid29192 [IFO,App] Found plugin org.micromanager.pipelinesaver.SaverPlugin@18421baf
+2022-01-17T09:21:55.367009 tid29192 [IFO,App] Found plugin org.micromanager.plugins.framecombiner.FrameCombinerPlugin@720bcaf1
+2022-01-17T09:21:55.367009 tid29192 [IFO,App] Found plugin org.micromanager.plugins.rtintensities.RTIntensities@424a7630
+2022-01-17T09:21:55.367009 tid29192 [IFO,App] Found plugin org.micromanager.plugins.sequencebuffermonitor.SequenceBufferMonitor@6c89b59c
+2022-01-17T09:21:55.367009 tid29192 [IFO,App] Found plugin org.micromanager.plugins.snaponmove.SnapOnMovePlugin@641e44c1
+2022-01-17T09:21:55.367009 tid29192 [IFO,App] Found plugin org.micromanager.pointandshootanalysis.PointAndShootAnalysis@486e56f1
+2022-01-17T09:21:55.367009 tid29192 [IFO,App] Found plugin org.micromanager.projector.ProjectorPlugin@780039d3
+2022-01-17T09:21:55.368009 tid29192 [IFO,App] Found plugin org.micromanager.ptctools.PtcTools@6eae525e
+2022-01-17T09:21:55.370009 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.AutofocusButtons@748252a7
+2022-01-17T09:21:55.370009 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.CloseAllButton@4138be4f
+2022-01-17T09:21:55.371009 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.ExposureTime@3fd0230f
+2022-01-17T09:21:55.372009 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.LiveButton@45270292
+2022-01-17T09:21:55.374009 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.MDAButtons@7e801313
+2022-01-17T09:21:55.375009 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.PresetButton@736414a0
+2022-01-17T09:21:55.375009 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.RefreshButton@d829954
+2022-01-17T09:21:55.376009 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.SavedMDAButton@54622d54
+2022-01-17T09:21:55.377010 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.ScriptButton@5f724d03
+2022-01-17T09:21:55.377010 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.ShutterControl@1a3fd334
+2022-01-17T09:21:55.378010 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.SnapButton@4840490a
+2022-01-17T09:21:55.378010 tid29192 [IFO,App] Found plugin org.micromanager.quickaccess.internal.controls.TextLabel@2c828545
+2022-01-17T09:21:55.378010 tid29192 [IFO,App] Found plugin org.micromanager.randomizer.RandomizePositionNamesPlugin@14154795
+2022-01-17T09:21:55.378010 tid29192 [IFO,App] Found plugin org.micromanager.ratioimaging.RatioImaging@2988130f
+2022-01-17T09:21:55.379010 tid29192 [IFO,App] Found plugin org.micromanager.recall.RecallPlugin@634a172d
+2022-01-17T09:21:55.379010 tid29192 [IFO,App] Found plugin org.micromanager.slideexplorer.SlideExplorerPlugin@5b5a1eac
+2022-01-17T09:21:55.379010 tid29192 [IFO,App] Found plugin org.micromanager.splitview.SplitView@654dc3bd
+2022-01-17T09:21:55.379010 tid29192 [IFO,App] Found plugin org.micromanager.zprojector.ZProjectorPlugin@cb4a470
+2022-01-17T09:21:55.380010 tid29192 [IFO,App] Found plugin org.wallerlab.illuminate.IlluminatePlugin@3f7429b4
+2022-01-17T09:21:55.380010 tid29192 [IFO,App] Found plugin edu.ucsf.valelab.mmclearvolumeplugin.CVInspectorPanelPlugin@34d0ff88
+2022-01-17T09:21:55.380010 tid29192 [IFO,App] Plugin loading took 933ms
+2022-01-17T09:21:55.380010 tid20176 [IFO,App] Finished waiting for plugins to load
+2022-01-17T09:22:27.890869 tid20176 [IFO,Core] Did unload all devices
+2022-01-17T09:22:27.891869 tid20176 [IFO,Core] Did unload all devices
+2022-01-17T09:22:27.896870 tid20176 [IFO,Core] Did load device COM10 from SerialManager; label = COM10
+2022-01-17T09:22:27.896870 tid20176 [IFO,Core] Did load device COM41 from SerialManager; label = COM41
+2022-01-17T09:22:27.896870 tid20176 [IFO,Core] Did load device COM42 from SerialManager; label = COM42
+2022-01-17T09:22:27.896870 tid20176 [IFO,Core] Did load device COM15 from SerialManager; label = COM15
+2022-01-17T09:22:27.896870 tid20176 [IFO,Core] Did load device COM43 from SerialManager; label = COM43
+2022-01-17T09:22:27.896870 tid20176 [IFO,Core] Did load device COM44 from SerialManager; label = COM44
+2022-01-17T09:22:27.896870 tid20176 [IFO,Core] Did load device COM45 from SerialManager; label = COM45
+2022-01-17T09:22:27.896870 tid20176 [IFO,Core] Did load device COM46 from SerialManager; label = COM46
+2022-01-17T09:22:27.904870 tid20176 [IFO,Core] Did load device TIScope from NikonTI; label = TIScope
+2022-01-17T09:22:27.904870 tid20176 [IFO,Core] Did load device TINosePiece from NikonTI; label = TINosePiece
+2022-01-17T09:22:27.904870 tid20176 [IFO,Core] Did load device TICondenserCassette from NikonTI; label = TICondenserCassette
+2022-01-17T09:22:27.904870 tid20176 [IFO,Core] Did load device TIFilterBlock1 from NikonTI; label = TIFilterBlock1
+2022-01-17T09:22:27.904870 tid20176 [IFO,Core] Did load device TIFilterBlock2 from NikonTI; label = TIFilterBlock2
+2022-01-17T09:22:27.904870 tid20176 [IFO,Core] Did load device TILightPath from NikonTI; label = TILightPath
+2022-01-17T09:22:27.904870 tid20176 [IFO,Core] Did load device TIZDrive from NikonTI; label = TIZDrive
+2022-01-17T09:22:27.905870 tid20176 [IFO,Core] Did load device TIPFSOffset from NikonTI; label = TIPFSOffset
+2022-01-17T09:22:27.905870 tid20176 [IFO,Core] Did load device TIPFSStatus from NikonTI; label = TIPFSStatus
+2022-01-17T09:22:27.908870 tid20176 [IFO,Core] Did load device XYStage from Marzhauser; label = XYStage
+2022-01-17T09:22:27.910870 tid20176 [IFO,Core] Did load device Coherent-Scientific Remote from CoherentScientificRemote; label = 405
+2022-01-17T09:22:27.910870 tid20176 [IFO,Core] Did load device Coherent-Scientific Remote from CoherentScientificRemote; label = 488
+2022-01-17T09:22:27.910870 tid20176 [IFO,Core] Did load device TIScope from NikonTI; label = TIScope-1
+2022-01-17T09:22:27.910870 tid20176 [IFO,Core] Did load device Coherent-Scientific Remote from CoherentScientificRemote; label = 532
+2022-01-17T09:22:27.910870 tid20176 [IFO,Core] Did load device Coherent-Scientific Remote from CoherentScientificRemote; label = 561
+2022-01-17T09:22:27.910870 tid20176 [IFO,Core] Did load device Coherent-Scientific Remote from CoherentScientificRemote; label = 594
+2022-01-17T09:22:27.910870 tid20176 [IFO,Core] Did load device Coherent-Scientific Remote from CoherentScientificRemote; label = RED
+2022-01-17T09:22:28.050878 tid20176 [IFO,Core] Did load device DigitalIO from NI100X; label = Dev1/port0
+2022-01-17T09:22:28.055879 tid20176 [IFO,Core] Did load device HamamatsuHam_DCAM from HamamatsuHam; label = camera_widefield
+2022-01-17T09:22:28.055879 tid20176 [IFO,Core] Did load device Coherent-Scientific Remote from CoherentScientificRemote; label = 637
+2022-01-17T09:22:28.056879 tid20176 [IFO,Core] Will initialize 28 devices
+2022-01-17T09:22:28.056879 tid20176 [IFO,Core] Will initialize device COM10
+2022-01-17T09:22:28.058879 tid20176 [IFO,dev:COM10] Setting standard USB to Serial settings
+2022-01-17T09:22:28.068879 tid20176 [IFO,Core] Did initialize device COM10
+2022-01-17T09:22:28.068879 tid20176 [IFO,Core] Will initialize device COM41
+2022-01-17T09:22:28.070880 tid20176 [IFO,dev:COM41] Setting standard USB to Serial settings
+2022-01-17T09:22:28.079880 tid20176 [IFO,Core] Did initialize device COM41
+2022-01-17T09:22:28.079880 tid20176 [IFO,Core] Will initialize device COM42
+2022-01-17T09:22:28.080880 tid20176 [IFO,dev:COM42] Setting standard USB to Serial settings
+2022-01-17T09:22:28.086880 tid20176 [IFO,Core] Did initialize device COM42
+2022-01-17T09:22:28.086880 tid20176 [IFO,Core] Will initialize device COM15
+2022-01-17T09:22:28.090881 tid20176 [IFO,dev:COM15] Setting standard USB to Serial settings
+2022-01-17T09:22:28.100881 tid20176 [IFO,Core] Did initialize device COM15
+2022-01-17T09:22:28.100881 tid20176 [IFO,Core] Will initialize device COM43
+2022-01-17T09:22:28.102881 tid20176 [IFO,dev:COM43] Setting standard USB to Serial settings
+2022-01-17T09:22:28.114882 tid20176 [IFO,Core] Did initialize device COM43
+2022-01-17T09:22:28.114882 tid20176 [IFO,Core] Will initialize device COM44
+2022-01-17T09:22:28.117882 tid20176 [IFO,dev:COM44] Setting standard USB to Serial settings
+2022-01-17T09:22:28.127883 tid20176 [IFO,Core] Did initialize device COM44
+2022-01-17T09:22:28.127883 tid20176 [IFO,Core] Will initialize device COM45
+2022-01-17T09:22:28.128883 tid20176 [IFO,dev:COM45] Setting standard USB to Serial settings
+2022-01-17T09:22:28.134883 tid20176 [IFO,Core] Did initialize device COM45
+2022-01-17T09:22:28.134883 tid20176 [IFO,Core] Will initialize device COM46
+2022-01-17T09:22:28.135883 tid20176 [IFO,dev:COM46] Setting standard USB to Serial settings
+2022-01-17T09:22:28.141884 tid20176 [IFO,Core] Did initialize device COM46
+2022-01-17T09:22:28.141884 tid20176 [IFO,Core] Will initialize device TIScope
+2022-01-17T09:22:28.181886 tid20176 [IFO,dev:TIScope] Driver version: micusb.sys 3.0.1.13
+2022-01-17T09:22:28.183886 tid20176 [IFO,dev:TIScope] Software version: 4.4.1.728
+2022-01-17T09:22:30.069994 tid20176 [IFO,dev:TIScope] Firmware version: Ti-E V5.30
+2022-01-17T09:22:30.069994 tid20176 [IFO,Core] Did initialize device TIScope
+2022-01-17T09:22:30.069994 tid20176 [IFO,Core] Will initialize device TINosePiece
+2022-01-17T09:22:30.234003 tid20176 [IFO,Core] Did initialize device TINosePiece
+2022-01-17T09:22:30.234003 tid20176 [IFO,Core] Will initialize device TICondenserCassette
+2022-01-17T09:22:30.257005 tid20176 [IFO,Core] Did initialize device TICondenserCassette
+2022-01-17T09:22:30.257005 tid20176 [IFO,Core] Will initialize device TIFilterBlock1
+2022-01-17T09:22:30.295007 tid20176 [IFO,Core] Did initialize device TIFilterBlock1
+2022-01-17T09:22:30.295007 tid20176 [IFO,Core] Will initialize device TIFilterBlock2
+2022-01-17T09:22:30.332009 tid20176 [IFO,Core] Did initialize device TIFilterBlock2
+2022-01-17T09:22:30.332009 tid20176 [IFO,Core] Will initialize device TILightPath
+2022-01-17T09:22:30.384012 tid20176 [IFO,Core] Did initialize device TILightPath
+2022-01-17T09:22:30.384012 tid20176 [IFO,Core] Will initialize device TIZDrive
+2022-01-17T09:22:30.402013 tid20176 [IFO,Core] Did initialize device TIZDrive
+2022-01-17T09:22:30.402013 tid20176 [IFO,Core] Will initialize device TIPFSOffset
+2022-01-17T09:22:30.456016 tid20176 [IFO,Core] Did initialize device TIPFSOffset
+2022-01-17T09:22:30.456016 tid20176 [IFO,Core] Will initialize device TIPFSStatus
+2022-01-17T09:22:30.476017 tid20176 [IFO,Core] Did initialize device TIPFSStatus
+2022-01-17T09:22:30.476017 tid20176 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:22:30.476017 tid20176 [IFO,Core] Will initialize device XYStage
+2022-01-17T09:22:30.569022 tid20176 [IFO,Core] Did initialize device XYStage
+2022-01-17T09:22:30.569022 tid20176 [IFO,Core] Default xy stage set to XYStage
+2022-01-17T09:22:30.569022 tid20176 [IFO,Core] Will initialize device 405
+2022-01-17T09:22:30.569022 tid20176 [IFO,dev:405] CoherentScientificRemote::Initialize()yes??
+2022-01-17T09:22:30.655027 tid20176 [IFO,Core] Did initialize device 405
+2022-01-17T09:22:30.655027 tid20176 [IFO,Core] Default shutter set to 405
+2022-01-17T09:22:30.655027 tid20176 [IFO,Core] Will initialize device 488
+2022-01-17T09:22:30.655027 tid20176 [IFO,dev:488] CoherentScientificRemote::Initialize()yes??
+2022-01-17T09:22:30.746033 tid20176 [IFO,Core] Did initialize device 488
+2022-01-17T09:22:30.746033 tid20176 [IFO,Core] Default shutter set to 488
+2022-01-17T09:22:30.746033 tid20176 [IFO,Core] Will initialize device TIScope-1
+2022-01-17T09:22:30.786035 tid20176 [IFO,dev:TIScope-1] Driver version: micusb.sys 3.0.1.13
+2022-01-17T09:22:30.788035 tid20176 [IFO,dev:TIScope-1] Software version: 4.4.1.728
+2022-01-17T09:22:30.861039 tid20176 [IFO,dev:TIScope-1] Firmware version: Ti-E V5.30
+2022-01-17T09:22:30.861039 tid20176 [IFO,Core] Did initialize device TIScope-1
+2022-01-17T09:22:30.861039 tid20176 [IFO,Core] Will initialize device 532
+2022-01-17T09:22:30.861039 tid20176 [IFO,dev:532] CoherentScientificRemote::Initialize()yes??
+2022-01-17T09:22:30.957045 tid20176 [IFO,Core] Did initialize device 532
+2022-01-17T09:22:30.957045 tid20176 [IFO,Core] Default shutter set to 532
+2022-01-17T09:22:30.957045 tid20176 [IFO,Core] Will initialize device 561
+2022-01-17T09:22:30.957045 tid20176 [IFO,dev:561] CoherentScientificRemote::Initialize()yes??
+2022-01-17T09:22:31.044050 tid20176 [IFO,Core] Did initialize device 561
+2022-01-17T09:22:31.044050 tid20176 [IFO,Core] Default shutter set to 561
+2022-01-17T09:22:31.044050 tid20176 [IFO,Core] Will initialize device 594
+2022-01-17T09:22:31.044050 tid20176 [IFO,dev:594] CoherentScientificRemote::Initialize()yes??
+2022-01-17T09:22:31.133055 tid20176 [IFO,Core] Did initialize device 594
+2022-01-17T09:22:31.133055 tid20176 [IFO,Core] Default shutter set to 594
+2022-01-17T09:22:31.133055 tid20176 [IFO,Core] Will initialize device RED
+2022-01-17T09:22:31.133055 tid20176 [IFO,dev:RED] CoherentScientificRemote::Initialize()yes??
+2022-01-17T09:22:31.217059 tid20176 [IFO,Core] Did initialize device RED
+2022-01-17T09:22:31.217059 tid20176 [IFO,Core] Default shutter set to RED
+2022-01-17T09:22:31.217059 tid20176 [IFO,Core] Will initialize device Dev1/port0
+2022-01-17T09:22:31.228060 tid20176 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:22:31.228060 tid20176 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:22:31.240061 tid20176 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:22:31.240061 tid20176 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:22:31.242061 tid20176 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:22:31.242061 tid20176 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:22:31.242061 tid20176 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:22:31.242061 tid20176 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:22:31.248061 tid20176 [IFO,Core] Did initialize device Dev1/port0
+2022-01-17T09:22:31.248061 tid20176 [IFO,Core] Will initialize device camera_widefield
+2022-01-17T09:22:38.424472 tid20176 [IFO,Core] Did initialize device camera_widefield
+2022-01-17T09:22:38.424472 tid20176 [IFO,Core] Default camera set to camera_widefield
+2022-01-17T09:22:38.424472 tid20176 [IFO,Core] Will initialize device 637
+2022-01-17T09:22:38.424472 tid20176 [IFO,dev:637] CoherentScientificRemote::Initialize()yes??
+2022-01-17T09:22:38.516477 tid20176 [IFO,Core] Did initialize device 637
+2022-01-17T09:22:38.516477 tid20176 [IFO,Core] Default shutter set to 637
+2022-01-17T09:22:38.516477 tid20176 [IFO,Core] Finished initializing 28 devices
+2022-01-17T09:22:38.516477 tid20176 [IFO,Core] Default camera set to camera_widefield
+2022-01-17T09:22:38.555479 tid20176 [IFO,Core] Default shutter set to 405
+2022-01-17T09:22:38.555479 tid20176 [IFO,Core] Default stage set to TIPFSOffset
+2022-01-17T09:22:39.104511 tid20176 [IFO,Core] Did update system state cache
+2022-01-17T09:22:40.383584 tid20176 [IFO,Core] Did update system state cache
+2022-01-17T09:22:42.492704 tid20176 [IFO,App] EDTHangLogger: Started monitoring of EDT hangs
+                                    [       ] [heartbeat timeout = 4500 ms, hang check interval = 1000 ms]
+2022-01-17T09:22:43.003734 tid20176 [IFO,App] Rebuilding config group table
+2022-01-17T09:22:43.419757 tid20176 [IFO,App] Finished rebuilding config group table
+2022-01-17T09:22:43.461760 tid20176 [IFO,App] Startup script (X:\91 Data and analysis\YJunqi\Script\Dual color\MMStartup.bsh) not present
+2022-01-17T09:22:43.461760 tid20176 [IFO,App] Updating GUI; config pad = true; from cache = false
+2022-01-17T09:22:43.473761 tid20176 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:22:43.507762 tid20176 [IFO,App] Rebuilding config group table
+2022-01-17T09:22:43.905785 tid20176 [IFO,App] Finished rebuilding config group table
+2022-01-17T09:22:44.438816 tid20176 [IFO,Core] Did update system state cache
+2022-01-17T09:22:44.439816 tid20176 [IFO,App] Finished updating GUI
+2022-01-17T09:23:57.862015 tid22056 [IFO,Core] Channel group set to Channel
+2022-01-17T09:23:57.863015 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:24:31.593945 tid22056 [IFO,App] Class: class org.micromanager.display.internal.displaywindow.DisplayController
+2022-01-17T09:24:31.593945 tid22056 [IFO,App] Classloader: sun.misc.Launcher$AppClassLoader@c387f44
+2022-01-17T09:24:37.972309 tid22056 [IFO,App] Class: class org.micromanager.display.internal.displaywindow.DisplayController
+2022-01-17T09:24:37.972309 tid22056 [IFO,App] Classloader: sun.misc.Launcher$AppClassLoader@c387f44
+2022-01-17T09:24:43.407620 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:24:43.666635 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:24:43.666635 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:24:43.672635 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:24:43.674636 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:24:45.139719 tid22056 [IFO,dev:TIFilterBlock1] Already at position; not moving
+2022-01-17T09:24:45.291728 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:24:45.291728 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:24:45.292728 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:24:45.292728 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:24:45.859761 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:24:46.144777 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:24:46.144777 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:24:46.149777 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:24:46.151777 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:24:50.662035 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:24:50.923050 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:24:50.923050 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:24:50.929051 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:24:50.930051 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:24:51.456081 tid22056 [IFO,dev:COM43] TERM_TIMEOUT error occured!
+2022-01-17T09:24:51.456081 tid22056 [ERR,Core] Error occurred in device COM43: Error in device "COM43": (Error message unavailable) (107)
+2022-01-17T09:24:53.020170 tid22056 [IFO,dev:TIFilterBlock1] Already at position; not moving
+2022-01-17T09:24:53.191180 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:24:53.191180 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:24:53.192180 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:24:53.192180 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:24:53.686208 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:24:53.945223 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:24:53.945223 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:24:53.950223 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:24:53.952223 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:24:57.103404 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:24:57.378419 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:24:57.378419 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:24:57.384420 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:24:57.385420 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:25:23.364906 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:25:23.640922 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:25:23.640922 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:25:23.646922 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:25:23.647922 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:25:29.133236 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:25:29.398251 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:25:29.398251 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:25:29.404251 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:25:29.406251 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:25:33.051460 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:25:33.051460 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:25:33.051460 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:25:33.051460 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:25:33.793502 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:25:34.071518 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:25:34.071518 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:25:34.079519 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:25:34.081519 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:25:36.728670 tid22056 [IFO,dev:COM10] TERM_TIMEOUT error occured!
+2022-01-17T09:25:36.728670 tid22056 [ERR,Core] Error occurred in device COM10: Error in device "COM10": (Error message unavailable) (107)
+2022-01-17T09:27:23.009749 tid22056 [IFO,dev:COM42] TERM_TIMEOUT error occured!
+2022-01-17T09:27:23.009749 tid22056 [ERR,Core] Error occurred in device COM42: Error in device "COM42": (Error message unavailable) (107)
+2022-01-17T09:29:19.409407 tid22056 [IFO,dev:COM42] TERM_TIMEOUT error occured!
+2022-01-17T09:29:19.409407 tid22056 [ERR,Core] Error occurred in device COM42: Error in device "COM42": (Error message unavailable) (107)
+2022-01-17T09:30:41.221086 tid22056 [IFO,dev:COM41] TERM_TIMEOUT error occured!
+2022-01-17T09:30:41.221086 tid22056 [ERR,Core] Error occurred in device COM41: Error in device "COM41": (Error message unavailable) (107)
+2022-01-17T09:33:20.683207 tid22056 [IFO,dev:COM42] TERM_TIMEOUT error occured!
+2022-01-17T09:33:20.683207 tid22056 [ERR,Core] Error occurred in device COM42: Error in device "COM42": (Error message unavailable) (107)
+2022-01-17T09:33:21.235238 tid22056 [IFO,dev:COM42] TERM_TIMEOUT error occured!
+2022-01-17T09:33:21.235238 tid22056 [ERR,Core] Error occurred in device COM42: Error in device "COM42": (Error message unavailable) (107)
+2022-01-17T09:35:30.747646 tid22056 [IFO,dev:COM43] TERM_TIMEOUT error occured!
+2022-01-17T09:35:30.747646 tid22056 [ERR,Core] Error occurred in device COM43: Error in device "COM43": (Error message unavailable) (107)
+2022-01-17T09:38:05.639505 tid22056 [IFO,dev:COM45] TERM_TIMEOUT error occured!
+2022-01-17T09:38:05.639505 tid22056 [ERR,Core] Error occurred in device COM45: Error in device "COM45": (Error message unavailable) (107)
+2022-01-17T09:38:06.191537 tid22056 [IFO,dev:COM45] TERM_TIMEOUT error occured!
+2022-01-17T09:38:06.191537 tid22056 [ERR,Core] Error occurred in device COM45: Error in device "COM45": (Error message unavailable) (107)
+2022-01-17T09:38:16.455124 tid22056 [IFO,dev:COM45] TERM_TIMEOUT error occured!
+2022-01-17T09:38:16.455124 tid22056 [ERR,Core] Error occurred in device COM45: Error in device "COM45": (Error message unavailable) (107)
+2022-01-17T09:38:17.013156 tid22056 [IFO,dev:COM45] TERM_TIMEOUT error occured!
+2022-01-17T09:38:17.013156 tid22056 [ERR,Core] Error occurred in device COM45: Error in device "COM45": (Error message unavailable) (107)
+2022-01-17T09:38:29.346861 tid22056 [IFO,dev:COM10] TERM_TIMEOUT error occured!
+2022-01-17T09:38:29.346861 tid22056 [ERR,Core] Error occurred in device COM10: Error in device "COM10": (Error message unavailable) (107)
+2022-01-17T09:40:31.118826 tid22056 [IFO,dev:COM43] TERM_TIMEOUT error occured!
+2022-01-17T09:40:31.118826 tid22056 [ERR,Core] Error occurred in device COM43: Error in device "COM43": (Error message unavailable) (107)
+2022-01-17T09:40:31.670858 tid22056 [IFO,dev:COM43] TERM_TIMEOUT error occured!
+2022-01-17T09:40:31.670858 tid22056 [ERR,Core] Error occurred in device COM43: Error in device "COM43": (Error message unavailable) (107)
+2022-01-17T09:41:07.331898 tid22056 [IFO,dev:COM10] TERM_TIMEOUT error occured!
+2022-01-17T09:41:07.331898 tid22056 [ERR,Core] Error occurred in device COM10: Error in device "COM10": (Error message unavailable) (107)
+2022-01-17T09:41:07.885929 tid22056 [IFO,dev:COM10] TERM_TIMEOUT error occured!
+2022-01-17T09:41:07.885929 tid22056 [ERR,Core] Error occurred in device COM10: Error in device "COM10": (Error message unavailable) (107)
+2022-01-17T09:44:32.603638 tid22056 [IFO,dev:TIFilterBlock1] Already at position; not moving
+2022-01-17T09:44:32.751647 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:44:32.751647 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:44:32.752647 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:44:32.752647 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:44:33.314679 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:44:33.577694 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:44:33.577694 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:44:33.582694 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:44:33.583695 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:44:45.842396 tid22056 [IFO,dev:TIFilterBlock1] Already at position; not moving
+2022-01-17T09:44:45.999405 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:44:45.999405 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:44:45.999405 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:44:45.999405 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:44:46.536435 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:44:46.805451 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:44:46.805451 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:44:46.810451 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:44:46.811451 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:44:56.291993 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1407.8 797.3
+2022-01-17T09:45:00.762249 tid22056 [IFO,dev:TIFilterBlock1] Already at position; not moving
+2022-01-17T09:45:00.905257 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:45:00.905257 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:45:00.906257 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:45:00.906257 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:45:01.454289 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:45:01.706303 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:45:01.706303 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:45:01.714303 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:45:01.715304 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:45:09.865770 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 303 -307.5
+2022-01-17T09:45:24.702618 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 303 -307.5
+2022-01-17T09:45:26.816739 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 303 -307.5
+2022-01-17T09:45:27.794795 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 303 -307.5
+2022-01-17T09:45:30.304939 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 303 -307.5
+2022-01-17T09:45:32.228049 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 2512.6 -307.5
+2022-01-17T09:45:41.723592 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 2512.6 -307.5
+2022-01-17T09:45:44.036724 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1407.8 -1412.3
+2022-01-17T09:45:58.627559 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1407.8 -1412.3
+2022-01-17T09:46:00.125644 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1407.8 -1412.3
+2022-01-17T09:46:00.684676 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1407.8 -1412.3
+2022-01-17T09:46:06.627016 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -1413.3
+2022-01-17T09:46:12.136331 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -1413.3
+2022-01-17T09:46:19.223737 tid22056 [IFO,App] Class: class org.micromanager.display.internal.displaywindow.DisplayController
+2022-01-17T09:46:19.224737 tid22056 [IFO,App] Classloader: sun.misc.Launcher$AppClassLoader@c387f44
+2022-01-17T09:46:19.535755 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -1413.3
+2022-01-17T09:46:19.579757 tid26424 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2022-01-17T09:46:19.586758 tid26424 [IFO,dev:TIFilterBlock1] Already at position; not moving
+2022-01-17T09:46:20.401804 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -1413.3
+2022-01-17T09:46:21.004839 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -1413.3
+2022-01-17T09:46:21.049841 tid22056 [IFO,App] Error: DisplayUICOntroller: Received request to autostretch image for which no statistics are available
+2022-01-17T09:46:21.049841 tid22056 [IFO,App] Error: DisplayUICOntroller: Received request to autostretch image for which no statistics are available
+2022-01-17T09:46:21.081843 tid22056 [IFO,App] Error: DisplayUICOntroller: Received request to autostretch image for which no statistics are available
+2022-01-17T09:46:21.592872 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -1413.3
+2022-01-17T09:46:21.597873 tid22056 [IFO,App] Error: DisplayUICOntroller: Received request to autostretch image for which no statistics are available
+2022-01-17T09:46:22.156905 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -1413.3
+2022-01-17T09:46:22.722937 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -1413.3
+2022-01-17T09:46:23.326971 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -1413.3
+2022-01-17T09:46:23.881003 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -1413.3
+2022-01-17T09:46:24.434035 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -1413.3
+2022-01-17T09:46:24.988066 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -1413.3
+2022-01-17T09:46:25.541098 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -1413.3
+2022-01-17T09:46:26.097130 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -1413.3
+2022-01-17T09:46:26.649161 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -1413.3
+2022-01-17T09:46:27.204193 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -1413.3
+2022-01-17T09:46:27.753225 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -1413.3
+2022-01-17T09:46:28.309256 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -1413.3
+2022-01-17T09:46:28.861288 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -1413.3
+2022-01-17T09:46:29.405319 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -1413.3
+2022-01-17T09:46:29.965351 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -1413.3
+2022-01-17T09:46:30.518383 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -1413.3
+2022-01-17T09:46:31.064414 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -1296.9
+2022-01-17T09:46:31.611445 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -1296.9
+2022-01-17T09:46:32.157477 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -1296.9
+2022-01-17T09:46:32.709508 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -1296.9
+2022-01-17T09:46:33.263540 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -1296.9
+2022-01-17T09:46:33.820572 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -1296.9
+2022-01-17T09:46:34.374603 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -1296.9
+2022-01-17T09:46:34.926635 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -1296.9
+2022-01-17T09:46:35.479667 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -1296.9
+2022-01-17T09:46:36.032698 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -1296.9
+2022-01-17T09:46:36.582730 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -1296.9
+2022-01-17T09:46:37.127761 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -1296.9
+2022-01-17T09:46:37.677792 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -1296.9
+2022-01-17T09:46:38.230824 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -1296.9
+2022-01-17T09:46:38.786856 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -1296.9
+2022-01-17T09:46:39.336887 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -1296.9
+2022-01-17T09:46:39.896919 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -1296.9
+2022-01-17T09:46:40.443951 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -1296.9
+2022-01-17T09:46:40.989982 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -1296.9
+2022-01-17T09:46:41.545013 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -1296.9
+2022-01-17T09:46:42.096045 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -1180.5
+2022-01-17T09:46:42.653077 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -1180.5
+2022-01-17T09:46:43.202108 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -1180.5
+2022-01-17T09:46:43.760140 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -1180.5
+2022-01-17T09:46:44.309172 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -1180.5
+2022-01-17T09:46:44.858203 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -1180.5
+2022-01-17T09:46:45.408234 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -1180.5
+2022-01-17T09:46:45.954266 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -1180.5
+2022-01-17T09:46:46.528299 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -1180.5
+2022-01-17T09:46:47.076330 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -1180.5
+2022-01-17T09:46:47.626361 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -1180.5
+2022-01-17T09:46:48.179393 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -1180.5
+2022-01-17T09:46:48.729424 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -1180.5
+2022-01-17T09:46:49.274456 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -1180.5
+2022-01-17T09:46:49.824487 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -1180.5
+2022-01-17T09:46:50.372518 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -1180.5
+2022-01-17T09:46:50.925550 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -1180.5
+2022-01-17T09:46:51.476582 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -1180.5
+2022-01-17T09:46:52.028613 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -1180.5
+2022-01-17T09:46:52.573644 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -1180.5
+2022-01-17T09:46:53.115675 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -1064.1
+2022-01-17T09:46:53.671707 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -1064.1
+2022-01-17T09:46:54.227739 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -1064.1
+2022-01-17T09:46:54.779770 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -1064.1
+2022-01-17T09:46:55.333802 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -1064.1
+2022-01-17T09:46:55.886834 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -1064.1
+2022-01-17T09:46:56.435865 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -1064.1
+2022-01-17T09:46:56.992897 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -1064.1
+2022-01-17T09:46:57.536928 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -1064.1
+2022-01-17T09:46:58.081959 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -1064.1
+2022-01-17T09:46:58.637991 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -1064.1
+2022-01-17T09:46:59.190023 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -1064.1
+2022-01-17T09:46:59.738054 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -1064.1
+2022-01-17T09:47:00.289086 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -1064.1
+2022-01-17T09:47:00.844117 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -1064.1
+2022-01-17T09:47:01.404149 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -1064.1
+2022-01-17T09:47:01.953181 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -1064.1
+2022-01-17T09:47:02.504212 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -1064.1
+2022-01-17T09:47:03.048243 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -1064.1
+2022-01-17T09:47:03.603275 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -1064.1
+2022-01-17T09:47:04.149306 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -947.7
+2022-01-17T09:47:04.697338 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -947.7
+2022-01-17T09:47:05.255370 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -947.7
+2022-01-17T09:47:05.799401 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -947.7
+2022-01-17T09:47:06.349432 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -947.7
+2022-01-17T09:47:06.900464 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -947.7
+2022-01-17T09:47:07.451495 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -947.7
+2022-01-17T09:47:07.999527 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -947.7
+2022-01-17T09:47:08.552558 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -947.7
+2022-01-17T09:47:09.094589 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -947.7
+2022-01-17T09:47:09.643621 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -947.7
+2022-01-17T09:47:10.196652 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -947.7
+2022-01-17T09:47:10.742683 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -947.7
+2022-01-17T09:47:11.286715 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -947.7
+2022-01-17T09:47:11.837746 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -947.7
+2022-01-17T09:47:12.387778 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -947.7
+2022-01-17T09:47:12.941809 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -947.7
+2022-01-17T09:47:13.485840 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -947.7
+2022-01-17T09:47:14.034872 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -947.7
+2022-01-17T09:47:14.580903 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -947.7
+2022-01-17T09:47:15.122934 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -831.3
+2022-01-17T09:47:15.675966 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -831.3
+2022-01-17T09:47:16.221997 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -831.3
+2022-01-17T09:47:16.774028 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -831.3
+2022-01-17T09:47:17.326060 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -831.3
+2022-01-17T09:47:17.867091 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -831.3
+2022-01-17T09:47:18.412122 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -831.3
+2022-01-17T09:47:18.966154 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -831.3
+2022-01-17T09:47:19.511185 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -831.3
+2022-01-17T09:47:20.056216 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -831.3
+2022-01-17T09:47:20.606248 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -831.3
+2022-01-17T09:47:21.159279 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -831.3
+2022-01-17T09:47:21.701310 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -831.3
+2022-01-17T09:47:22.251342 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -831.3
+2022-01-17T09:47:22.797373 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -831.3
+2022-01-17T09:47:23.338404 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -831.3
+2022-01-17T09:47:23.889435 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -831.3
+2022-01-17T09:47:24.438467 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -831.3
+2022-01-17T09:47:24.991498 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -831.3
+2022-01-17T09:47:25.538530 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -831.3
+2022-01-17T09:47:26.089561 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -714.9
+2022-01-17T09:47:26.644593 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -714.9
+2022-01-17T09:47:27.197625 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -714.9
+2022-01-17T09:47:27.750656 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -714.9
+2022-01-17T09:47:28.303688 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -714.9
+2022-01-17T09:47:28.844719 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -714.9
+2022-01-17T09:47:29.386750 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -714.9
+2022-01-17T09:47:29.940782 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -714.9
+2022-01-17T09:47:30.495813 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -714.9
+2022-01-17T09:47:31.052845 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -714.9
+2022-01-17T09:47:31.605877 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -714.9
+2022-01-17T09:47:32.159908 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -714.9
+2022-01-17T09:47:32.706940 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -714.9
+2022-01-17T09:47:33.248971 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -714.9
+2022-01-17T09:47:33.796002 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -714.9
+2022-01-17T09:47:34.341033 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -714.9
+2022-01-17T09:47:34.890065 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -714.9
+2022-01-17T09:47:35.441096 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -714.9
+2022-01-17T09:47:35.985127 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -714.9
+2022-01-17T09:47:36.532159 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -714.9
+2022-01-17T09:47:37.075190 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -598.5
+2022-01-17T09:47:37.626221 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -598.5
+2022-01-17T09:47:38.173252 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -598.5
+2022-01-17T09:47:38.717284 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -598.5
+2022-01-17T09:47:39.260315 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -598.5
+2022-01-17T09:47:39.802346 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -598.5
+2022-01-17T09:47:40.343377 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -598.5
+2022-01-17T09:47:40.892408 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -598.5
+2022-01-17T09:47:41.441439 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -598.5
+2022-01-17T09:47:41.993471 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -598.5
+2022-01-17T09:47:42.542502 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -598.5
+2022-01-17T09:47:43.086533 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -598.5
+2022-01-17T09:47:43.633565 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -598.5
+2022-01-17T09:47:44.178596 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -598.5
+2022-01-17T09:47:44.730627 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -598.5
+2022-01-17T09:47:45.279659 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -598.5
+2022-01-17T09:47:45.828690 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -598.5
+2022-01-17T09:47:46.383722 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -598.5
+2022-01-17T09:47:46.925753 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -598.5
+2022-01-17T09:47:47.472784 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -598.5
+2022-01-17T09:47:48.018816 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -482.1
+2022-01-17T09:47:48.572847 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -482.1
+2022-01-17T09:47:49.126879 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -482.1
+2022-01-17T09:47:49.672910 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -482.1
+2022-01-17T09:47:50.214941 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -482.1
+2022-01-17T09:47:50.762973 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -482.1
+2022-01-17T09:47:51.314004 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -482.1
+2022-01-17T09:47:51.862035 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -482.1
+2022-01-17T09:47:52.404066 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -482.1
+2022-01-17T09:47:52.953098 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -482.1
+2022-01-17T09:47:53.503129 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -482.1
+2022-01-17T09:47:54.056161 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -482.1
+2022-01-17T09:47:54.604192 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -482.1
+2022-01-17T09:47:55.154224 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -482.1
+2022-01-17T09:47:55.707255 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -482.1
+2022-01-17T09:47:56.250286 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -482.1
+2022-01-17T09:47:56.799318 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -482.1
+2022-01-17T09:47:57.351349 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -482.1
+2022-01-17T09:47:57.910381 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -482.1
+2022-01-17T09:47:58.455413 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -482.1
+2022-01-17T09:47:59.000444 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -365.7
+2022-01-17T09:47:59.555475 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -365.7
+2022-01-17T09:48:00.099507 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -365.7
+2022-01-17T09:48:00.649538 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -365.7
+2022-01-17T09:48:01.199569 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -365.7
+2022-01-17T09:48:01.744601 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -365.7
+2022-01-17T09:48:02.292632 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -365.7
+2022-01-17T09:48:02.837663 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -365.7
+2022-01-17T09:48:03.387695 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -365.7
+2022-01-17T09:48:03.937726 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -365.7
+2022-01-17T09:48:04.484757 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -365.7
+2022-01-17T09:48:05.031789 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -365.7
+2022-01-17T09:48:05.575820 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -365.7
+2022-01-17T09:48:06.128851 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -365.7
+2022-01-17T09:48:06.676883 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -365.7
+2022-01-17T09:48:07.226914 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -365.7
+2022-01-17T09:48:07.781946 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -365.7
+2022-01-17T09:48:08.320977 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -365.7
+2022-01-17T09:48:08.864008 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -365.7
+2022-01-17T09:48:09.405039 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -365.7
+2022-01-17T09:48:09.955070 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -249.3
+2022-01-17T09:48:10.498101 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -249.3
+2022-01-17T09:48:11.047133 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -249.3
+2022-01-17T09:48:11.590164 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -249.3
+2022-01-17T09:48:12.144195 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -249.3
+2022-01-17T09:48:12.692227 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -249.3
+2022-01-17T09:48:13.239258 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -249.3
+2022-01-17T09:48:13.787289 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -249.3
+2022-01-17T09:48:14.332321 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -249.3
+2022-01-17T09:48:14.874352 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -249.3
+2022-01-17T09:48:15.425383 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -249.3
+2022-01-17T09:48:15.975415 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -249.3
+2022-01-17T09:48:16.517446 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -249.3
+2022-01-17T09:48:17.059477 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -249.3
+2022-01-17T09:48:17.608508 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -249.3
+2022-01-17T09:48:18.152539 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -249.3
+2022-01-17T09:48:18.694570 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -249.3
+2022-01-17T09:48:19.260602 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -249.3
+2022-01-17T09:48:19.808634 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -249.3
+2022-01-17T09:48:20.354665 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -249.3
+2022-01-17T09:48:20.908697 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -132.9
+2022-01-17T09:48:21.449728 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -132.9
+2022-01-17T09:48:21.994759 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -132.9
+2022-01-17T09:48:22.539790 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -132.9
+2022-01-17T09:48:23.087821 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -132.9
+2022-01-17T09:48:23.630852 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -132.9
+2022-01-17T09:48:24.183884 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -132.9
+2022-01-17T09:48:24.735916 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -132.9
+2022-01-17T09:48:25.278947 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -132.9
+2022-01-17T09:48:25.827978 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -132.9
+2022-01-17T09:48:26.375009 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -132.9
+2022-01-17T09:48:26.920041 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -132.9
+2022-01-17T09:48:27.466072 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -132.9
+2022-01-17T09:48:28.008103 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -132.9
+2022-01-17T09:48:28.554134 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -132.9
+2022-01-17T09:48:29.094165 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -132.9
+2022-01-17T09:48:29.638196 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -132.9
+2022-01-17T09:48:30.184227 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -132.9
+2022-01-17T09:48:30.727258 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -132.9
+2022-01-17T09:48:31.274290 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -132.9
+2022-01-17T09:48:31.830321 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 -16.5
+2022-01-17T09:48:32.376353 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 -16.5
+2022-01-17T09:48:32.925384 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 -16.5
+2022-01-17T09:48:33.468415 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 -16.5
+2022-01-17T09:48:34.007446 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 -16.5
+2022-01-17T09:48:34.554477 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 -16.5
+2022-01-17T09:48:35.102509 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 -16.5
+2022-01-17T09:48:35.652540 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 -16.5
+2022-01-17T09:48:36.207572 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 -16.5
+2022-01-17T09:48:36.751603 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 -16.5
+2022-01-17T09:48:37.298634 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 -16.5
+2022-01-17T09:48:37.850666 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 -16.5
+2022-01-17T09:48:38.403697 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 -16.5
+2022-01-17T09:48:38.953729 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 -16.5
+2022-01-17T09:48:39.496760 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 -16.5
+2022-01-17T09:48:40.041791 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 -16.5
+2022-01-17T09:48:40.593823 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 -16.5
+2022-01-17T09:48:41.136854 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 -16.5
+2022-01-17T09:48:41.678885 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 -16.5
+2022-01-17T09:48:42.221916 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 -16.5
+2022-01-17T09:48:42.787948 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 99.9
+2022-01-17T09:48:43.338980 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 99.9
+2022-01-17T09:48:43.880011 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 99.9
+2022-01-17T09:48:44.426042 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 99.9
+2022-01-17T09:48:44.976073 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 99.9
+2022-01-17T09:48:45.528105 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 99.9
+2022-01-17T09:48:46.072136 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 99.9
+2022-01-17T09:48:46.627168 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 99.9
+2022-01-17T09:48:47.178199 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 99.9
+2022-01-17T09:48:47.721230 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 99.9
+2022-01-17T09:48:48.274262 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 99.9
+2022-01-17T09:48:48.819293 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 99.9
+2022-01-17T09:48:49.362324 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 99.9
+2022-01-17T09:48:49.904355 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 99.9
+2022-01-17T09:48:50.451387 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 99.9
+2022-01-17T09:48:51.002418 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 99.9
+2022-01-17T09:48:51.556450 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 99.9
+2022-01-17T09:48:52.100481 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 99.9
+2022-01-17T09:48:52.642512 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 99.9
+2022-01-17T09:48:53.191543 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 99.9
+2022-01-17T09:48:53.733574 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 216.3
+2022-01-17T09:48:54.275605 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 216.3
+2022-01-17T09:48:54.820636 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 216.3
+2022-01-17T09:48:55.369668 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 216.3
+2022-01-17T09:48:55.922699 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 216.3
+2022-01-17T09:48:56.464730 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 216.3
+2022-01-17T09:48:57.012762 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 216.3
+2022-01-17T09:48:57.558793 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 216.3
+2022-01-17T09:48:58.100824 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 216.3
+2022-01-17T09:48:58.652856 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 216.3
+2022-01-17T09:48:59.205887 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 216.3
+2022-01-17T09:48:59.749918 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 216.3
+2022-01-17T09:49:00.290949 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 216.3
+2022-01-17T09:49:00.845981 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 216.3
+2022-01-17T09:49:01.394012 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 216.3
+2022-01-17T09:49:01.936043 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 216.3
+2022-01-17T09:49:02.483075 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 216.3
+2022-01-17T09:49:03.024106 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 216.3
+2022-01-17T09:49:03.572137 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 216.3
+2022-01-17T09:49:04.114168 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 216.3
+2022-01-17T09:49:04.665199 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 332.7
+2022-01-17T09:49:05.206230 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 332.7
+2022-01-17T09:49:05.756262 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 332.7
+2022-01-17T09:49:06.316294 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 332.7
+2022-01-17T09:49:06.859325 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 332.7
+2022-01-17T09:49:07.406356 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 332.7
+2022-01-17T09:49:07.949387 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 332.7
+2022-01-17T09:49:08.495419 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 332.7
+2022-01-17T09:49:09.039450 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 332.7
+2022-01-17T09:49:09.588481 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 332.7
+2022-01-17T09:49:10.137512 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 332.7
+2022-01-17T09:49:10.678543 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 332.7
+2022-01-17T09:49:11.225575 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 332.7
+2022-01-17T09:49:11.774606 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 332.7
+2022-01-17T09:49:12.327638 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 332.7
+2022-01-17T09:49:12.868669 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 332.7
+2022-01-17T09:49:13.418700 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 332.7
+2022-01-17T09:49:13.961731 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 332.7
+2022-01-17T09:49:14.515763 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 332.7
+2022-01-17T09:49:15.058794 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 332.7
+2022-01-17T09:49:15.600825 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 449.1
+2022-01-17T09:49:16.156857 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 449.1
+2022-01-17T09:49:16.699888 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 449.1
+2022-01-17T09:49:17.250919 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 449.1
+2022-01-17T09:49:17.802951 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 449.1
+2022-01-17T09:49:18.354982 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 449.1
+2022-01-17T09:49:18.898014 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 449.1
+2022-01-17T09:49:19.439045 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 449.1
+2022-01-17T09:49:19.980075 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 449.1
+2022-01-17T09:49:20.526107 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 449.1
+2022-01-17T09:49:21.077138 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 449.1
+2022-01-17T09:49:21.627170 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 449.1
+2022-01-17T09:49:22.176201 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 449.1
+2022-01-17T09:49:22.724232 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 449.1
+2022-01-17T09:49:23.274264 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 449.1
+2022-01-17T09:49:23.817295 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 449.1
+2022-01-17T09:49:24.364326 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 449.1
+2022-01-17T09:49:24.910357 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 449.1
+2022-01-17T09:49:25.463389 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 449.1
+2022-01-17T09:49:26.007420 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 449.1
+2022-01-17T09:49:26.561452 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 565.5
+2022-01-17T09:49:27.106483 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 565.5
+2022-01-17T09:49:27.650514 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 565.5
+2022-01-17T09:49:28.195545 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 565.5
+2022-01-17T09:49:28.747577 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 565.5
+2022-01-17T09:49:29.293608 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 565.5
+2022-01-17T09:49:29.856640 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 565.5
+2022-01-17T09:49:30.402672 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 565.5
+2022-01-17T09:49:30.951703 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 565.5
+2022-01-17T09:49:31.500734 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 565.5
+2022-01-17T09:49:32.049766 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 565.5
+2022-01-17T09:49:32.601797 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 565.5
+2022-01-17T09:49:33.144828 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 565.5
+2022-01-17T09:49:33.696860 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 565.5
+2022-01-17T09:49:34.241891 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 565.5
+2022-01-17T09:49:34.794923 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 565.5
+2022-01-17T09:49:35.347954 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 565.5
+2022-01-17T09:49:35.892986 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 565.5
+2022-01-17T09:49:36.448017 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 565.5
+2022-01-17T09:49:36.989048 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 565.5
+2022-01-17T09:49:37.537080 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 681.9
+2022-01-17T09:49:38.086111 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 681.9
+2022-01-17T09:49:38.628142 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 681.9
+2022-01-17T09:49:39.177173 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 681.9
+2022-01-17T09:49:39.720205 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 681.9
+2022-01-17T09:49:40.276236 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 681.9
+2022-01-17T09:49:40.821267 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 681.9
+2022-01-17T09:49:41.364299 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 681.9
+2022-01-17T09:49:41.909330 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 681.9
+2022-01-17T09:49:42.450361 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 681.9
+2022-01-17T09:49:43.007393 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 681.9
+2022-01-17T09:49:43.555424 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 681.9
+2022-01-17T09:49:44.104455 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 681.9
+2022-01-17T09:49:44.655487 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 681.9
+2022-01-17T09:49:45.209518 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 681.9
+2022-01-17T09:49:45.757550 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 681.9
+2022-01-17T09:49:46.302581 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 681.9
+2022-01-17T09:49:46.855613 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 681.9
+2022-01-17T09:49:47.400644 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 681.9
+2022-01-17T09:49:47.942675 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 681.9
+2022-01-17T09:49:48.487706 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2513.7 798.3
+2022-01-17T09:49:49.034737 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2397.3 798.3
+2022-01-17T09:49:49.586769 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2280.9 798.3
+2022-01-17T09:49:50.132800 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2164.5 798.3
+2022-01-17T09:49:50.682832 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 2048.1 798.3
+2022-01-17T09:49:51.235863 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1931.7 798.3
+2022-01-17T09:49:51.781894 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1815.3 798.3
+2022-01-17T09:49:52.332926 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1698.9 798.3
+2022-01-17T09:49:52.881957 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1582.5 798.3
+2022-01-17T09:49:53.441989 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1466.1 798.3
+2022-01-17T09:49:53.993021 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1349.7 798.3
+2022-01-17T09:49:54.545052 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1233.3 798.3
+2022-01-17T09:49:55.096084 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1116.9 798.3
+2022-01-17T09:49:55.645115 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 1000.5 798.3
+2022-01-17T09:49:56.190147 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 884.1 798.3
+2022-01-17T09:49:56.736178 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 767.7 798.3
+2022-01-17T09:49:57.287209 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 651.3 798.3
+2022-01-17T09:49:57.832240 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 534.9 798.3
+2022-01-17T09:49:58.378272 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 418.5 798.3
+2022-01-17T09:49:58.922303 tid26424 [IFO,dev:XYStage] XYStage::SetPositionUm() 302.1 798.3
+2022-01-17T09:50:00.786409 tid21548 [IFO,App] 400 images stored in 221505 ms.
+2022-01-17T09:50:37.043483 tid22056 [IFO,dev:TIFilterBlock1] Already at position; not moving
+2022-01-17T09:50:37.254495 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:50:37.254495 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:50:37.255495 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:50:37.255495 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:50:37.758524 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:50:38.043540 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:50:38.043540 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:50:38.049541 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:50:38.050541 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:51:18.977882 tid22056 [IFO,dev:TIFilterBlock1] Already at position; not moving
+2022-01-17T09:51:18.977882 tid22056 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2022-01-17T09:51:19.053886 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:51:19.331902 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:51:19.331902 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:51:19.337902 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:51:19.338902 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:53:26.184158 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:53:26.458173 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:53:26.458173 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:53:26.464174 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:53:26.465174 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:53:27.714245 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:53:27.714245 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:53:27.714245 tid22056 [IFO,dev:Dev1/port0] Setting up task for Dev1/port0
+2022-01-17T09:53:27.714245 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:53:27.804250 tid22056 [IFO,App] Refreshing config group table
+2022-01-17T09:53:28.068265 tid22056 [IFO,App] Finished refreshing config group table
+2022-01-17T09:53:28.068265 tid22056 [IFO,App] Updating GUI; config pad = false; from cache = false
+2022-01-17T09:53:28.074266 tid22056 [IFO,Core] Default autofocus set to TIPFSStatus
+2022-01-17T09:53:28.075266 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:53:30.198387 tid22056 [IFO,dev:Dev1/port0] Cancelling task for Dev1/port0
+2022-01-17T09:53:31.860482 tid22056 [ERR,Core] Attempt to log message from unregistered device: Cancelling task for Dev1/port0
+2022-01-17T09:53:31.861482 tid22056 [IFO,Core] Did unload all devices
+2022-01-17T09:53:31.861482 tid22056 [IFO,Core] Did unload all devices
+2022-01-17T09:53:31.861482 tid22056 [IFO,Core] Did load device COM15 from SerialManager; label = COM15
+2022-01-17T09:53:31.861482 tid22056 [IFO,Core] Did load device XYStage from Marzhauser; label = XYStage
+2022-01-17T09:53:31.861482 tid22056 [IFO,Core] Will initialize 2 devices
+2022-01-17T09:53:31.861482 tid22056 [IFO,Core] Will initialize device COM15
+2022-01-17T09:53:31.866483 tid22056 [IFO,dev:COM15] Setting standard USB to Serial settings
+2022-01-17T09:53:31.878483 tid22056 [IFO,Core] Did initialize device COM15
+2022-01-17T09:53:31.878483 tid22056 [IFO,Core] Will initialize device XYStage
+2022-01-17T09:53:31.969488 tid22056 [IFO,Core] Did initialize device XYStage
+2022-01-17T09:53:31.969488 tid22056 [IFO,Core] Default xy stage set to XYStage
+2022-01-17T09:53:31.969488 tid22056 [IFO,Core] Finished initializing 2 devices
+2022-01-17T09:53:31.969488 tid22056 [IFO,Core] Channel group set to 
+2022-01-17T09:53:32.010491 tid22056 [IFO,Core] Did update system state cache
+2022-01-17T09:53:32.021491 tid22056 [IFO,App] Updating GUI; config pad = true; from cache = false
+2022-01-17T09:53:32.027492 tid22056 [IFO,App] Rebuilding config group table
+2022-01-17T09:53:32.027492 tid22056 [IFO,App] Finished rebuilding config group table
+2022-01-17T09:53:32.063494 tid22056 [IFO,Core] Did update system state cache
+2022-01-17T09:53:32.063494 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:53:32.071494 tid22056 [IFO,App] Updating GUI; config pad = true; from cache = false
+2022-01-17T09:53:32.078495 tid22056 [IFO,App] Rebuilding config group table
+2022-01-17T09:53:32.078495 tid22056 [IFO,App] Finished rebuilding config group table
+2022-01-17T09:53:32.113497 tid22056 [IFO,Core] Did update system state cache
+2022-01-17T09:53:32.114497 tid22056 [IFO,App] Finished updating GUI
+2022-01-17T09:55:13.876317 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 250.967 -1342.83
+2022-01-17T09:55:37.401663 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 573.25 -1362.6
+2022-01-17T09:56:30.697711 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 709.85 -1330.75
+2022-01-17T09:56:46.005587 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1645.6 -411.9
+2022-01-17T09:57:06.334749 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1645.6 -411.9
+2022-01-17T09:57:07.365808 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1645.6 -411.9
+2022-01-17T10:00:48.751471 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1350.03 -1001.38
+2022-01-17T10:01:42.691556 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1333.13 -995.475
+2022-01-17T10:01:55.635296 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1206.33 -1017.58
+2022-01-17T10:02:00.135554 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1206.33 -1017.58
+2022-01-17T10:02:06.289906 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1188.99 -1153.63
+2022-01-17T10:02:17.807565 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 343.375 -564.375
+2022-01-17T10:02:27.566123 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 512.908 -67.9
+2022-01-17T10:05:22.318118 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 656.175 -95.6334
+2022-01-17T10:05:34.971842 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 570.542 181.583
+2022-01-17T10:08:56.016341 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1455.7 -703.2
+2022-01-17T10:12:05.796196 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1410.74 55
+2022-01-17T10:13:04.205536 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1512.68 178.383
+2022-01-17T10:13:19.076387 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1512.68 178.383
+2022-01-17T10:13:57.130564 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1614.68 -279.85
+2022-01-17T10:14:17.052703 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1624.48 -312.675
+2022-01-17T10:14:39.352979 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1624.48 -312.675
+2022-01-17T10:14:56.050934 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 250.967 -1342.83
+2022-01-17T10:15:19.564279 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 573.25 -1362.6
+2022-01-17T10:18:37.090576 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 512.908 -67.9
+2022-01-17T10:18:42.451883 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 709.85 -1330.75
+2022-01-17T10:19:06.256245 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1645.6 -411.9
+2022-01-17T10:19:12.516603 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1350.03 -1001.38
+2022-01-17T10:19:22.386167 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1333.13 -995.475
+2022-01-17T10:19:42.254304 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1206.33 -1017.58
+2022-01-17T10:19:46.662556 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1188.99 -1153.63
+2022-01-17T10:19:55.138040 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1624.48 -312.675
+2022-01-17T10:20:54.158416 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1614.68 -279.85
+2022-01-17T10:23:26.109107 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1512.68 178.383
+2022-01-17T10:24:30.296779 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1410.74 55
+2022-01-17T10:27:30.447083 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 656.175 -95.6334
+2022-01-17T10:27:53.975428 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 343.375 -564.375
+2022-01-17T10:28:22.305049 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1188.99 -1153.63
+2022-01-17T10:28:37.436914 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 573.25 -1362.6
+2022-01-17T10:37:30.017376 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1645.6 -411.9
+2022-01-17T10:44:27.087231 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 512.908 -67.9
+2022-01-17T10:51:26.530222 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 656.175 -95.6334
+2022-01-17T11:00:34.254550 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 512.908 -67.9
+2022-01-17T11:07:08.473098 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 570.542 181.583
+2022-01-17T11:18:00.979419 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1410.74 55
+2022-01-17T11:18:19.039452 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1512.68 178.383
+2022-01-17T11:18:30.705119 tid22056 [IFO,dev:XYStage] XYStage::SetPositionUm() 1410.74 55
+2022-01-17T11:24:33.208853 tid22056 [IFO,App] EDTHangLogger: Stopping monitoring of EDT hangs
+2022-01-17T11:24:33.413865 tid22056 [IFO,Core] Did unload all devices
+2022-01-17T11:24:33.413865 tid22056 [IFO,Core] System reset
+2022-01-17T11:24:34.158908 tid22056 [IFO,Core] Core session ended
