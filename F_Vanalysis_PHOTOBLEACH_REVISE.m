@@ -1,12 +1,12 @@
 % parameters
-basepath = 'D:\data\test\20220513 Sensitivity comparison&deploarization titration\Dish1\cell1\183207_40xWideField_bin2';
+basepath = 'E:\ZouLab\YJunqi\Sensitivity\20220606 Kinetics, sensitivity & depolarization test\Dish2\cell1\203925_40xWideField_bin2';
 subfolder = '';
 path = [basepath subfolder];
 
 % constants
 movname = '\movie.bin';
-ncol = 176;         % x
-nrow = 96;         % y
+ncol = 312;         % x
+nrow = 208;         % y
 bkg = 400;          % background due to camera bias (100 for bin 1x1)
 dt_mov = 0.1;       % exposure time in second
 DAQname = '\movie_DAQ.txt';

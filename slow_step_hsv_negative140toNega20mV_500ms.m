@@ -1,7 +1,7 @@
 % parameters
 clear all;
 subfolder = '\';
-basepath = 'H:\ZouLab\YJunqi\Screening method\System test\20220507 Depolarization titration\Dish3\cell2\211427_-140 to -20mV)_500ms';
+basepath = 'H:\ZouLab\YJunqi\Sensitivity\Cephied\20220616 Sensitivity, kinetics & hyperpolarization response test\Dish1\cell1\174946_-140 to -20mV)_500ms';
 % pathname = basepath
 pathname = [basepath subfolder];
 

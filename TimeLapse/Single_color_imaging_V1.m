@@ -1,6 +1,5 @@
 clear all
 %% loading two channels
-    
 name1 = 'mNeonGreen-CaaX';
 % name2 = 'HASAP1JF635';
 wvlt1 = 520;
@@ -8,7 +7,7 @@ wvlt1 = 520;
 name1color = getrgb(wvlt1);
 % name2color = getrgb(wvlt2);
 bin = 1;
-basepath = 'H:\ZouLab\YJunqi\Screening method\System test\20220307 Gramicidin test\Dish4\test';
+basepath = 'H:\ZouLab\YJunqi\Screening method\System test\20220312 Gramicidin test\Dish2\test';
 subfolder = '\';
 
 pathname = [basepath subfolder];
@@ -67,7 +66,7 @@ t_mov(7:end) = t_mov(7:end)+1200;
 expGroup = 'analysis\mNeonGreen-CaaX\'
 mkdir([pathname expGroup]);
 cmin1 = 100;
-cmax1 = 500;
+cmax1 = 1000;
 figure(20)
 for j = 1:(size(mov,3))
     imshow(mov(:,:,j),[cmin1,cmax1], 'Border', 'tight');hold on
@@ -120,6 +119,7 @@ colordef white
 [~, intens_forbkg] = clicky_v2(mov, dt_mov, bin, mean(mov(:,:,1:end),3), bkg ,200 ,[name1, "backgroud"]);
 saveas(gca,[pathname expGroup 'selected regions of bkg.fig']);
 saveas(gca,[pathname expGroup 'selected regions of bkg.png']);
+
 
 % figure(); 
 % plot(t_mov,intens_forbkg);
@@ -443,43 +443,24 @@ saveas(gca,[pathname expGroup 'shadow_deltaF_F0.png']);
 
 %%
 save([pathname 'All variants.mat']);
-%% Reatio calculation
-dyArcLightA242 = ArcLightA242 ./ mean(ArcLightA242(1:6, :)) -1;
-dyHASAP1JF635 = HASAP1JF635 ./ mean(HASAP1JF635(1:6, :)) -1;
-mean_dyArcLightA242 = mean(dyArcLightA242, 2);
-mean_dyHASAP1JF635 = mean(dyHASAP1JF635, 2);
-dyArcLightA242_sem = std(dyArcLightA242')'/sqrt(size(dyArcLightA242, 2));
-dyHASAP1JF635_sem = std(dyHASAP1JF635')'/sqrt(size(dyHASAP1JF635, 2));
-traceRatio = abs(dyHASAP1JF635./dyArcLightA242);
-meanRatio = mean(traceRatio, 2);
-semRatio = std(traceRatio')'/sqrt(size(traceRatio, 2));
+%% Summary calculation
+dymNeonCaaX = mNeonGreenCaaX ./ mean(mNeonGreenCaaX(1:6, :)) -1;
+dymNeonCaaX_sem = std(dymNeonCaaX')'/sqrt(size(dymNeonCaaX, 2));
 
 figure()
-seShoadowArcLightA242_1 = area(t_mov(1:6), [(mean(dyArcLightA242(1:6,:), 2) - dyArcLightA242_sem(1:6)), (2 * dyArcLightA242_sem(1:6))]);
-set(seShoadowArcLightA242_1(1),'Visible','off');
+seShoadowmNeonCaaX_1 = area(t_mov(1:6), [(mean(dymNeonCaaX(1:6,:), 2) - dymNeonCaaX_sem(1:6)), (2 * dymNeonCaaX_sem(1:6))]);
+set(seShoadowmNeonCaaX_1(1),'Visible','off');
 %set(seShoadow1_2(2),'FaceColor',[0.85, 0.32, 0]' ,'FaceAlpha',0.4, 'EdgeColor', 'none');
-set(seShoadowArcLightA242_1(2),'FaceColor',[0, 1, 1]' ,'FaceAlpha',0.3, 'EdgeColor', 'none');
+set(seShoadowmNeonCaaX_1(2),'FaceColor',[0, 1, 1]' ,'FaceAlpha',0.3, 'EdgeColor', 'none');
 hold on;
-seShoadowArcLightA242_2 = area(t_mov(7:end), [(mean(dyArcLightA242(7:end,:), 2) - dyArcLightA242_sem(7:end)), (2 * dyArcLightA242_sem(7:end))]);
-set(seShoadowArcLightA242_2(1),'Visible','off');
+seShoadowmNeonCaaX_2 = area(t_mov(7:end), [(mean(dymNeonCaaX(7:end,:), 2) - dymNeonCaaX_sem(7:end)), (2 * dymNeonCaaX_sem(7:end))]);
+set(seShoadowmNeonCaaX_2(1),'Visible','off');
 %set(seShoadow2_2(2),'FaceColor',[0.46, 0.68, 0.17]' ,'FaceAlpha',0.4, 'EdgeColor', 'none');
-set(seShoadowArcLightA242_2(2), 'FaceColor', [0, 1, 1]' , 'FaceAlpha',0.3, 'EdgeColor', 'none');
+set(seShoadowmNeonCaaX_2(2), 'FaceColor', [0, 1, 1]' , 'FaceAlpha',0.3, 'EdgeColor', 'none');
 hold on;
-seShoadowHASAP1JF635_1 = area(t_mov(1:6), [(mean(dyHASAP1JF635(1:6,:), 2) - dyHASAP1JF635_sem(1:6)), (2 * dyHASAP1JF635_sem(1:6))]);
-set(seShoadowHASAP1JF635_1(1),'Visible','off');
-%set(seShoadow1_2(2),'FaceColor',[0.85, 0.32, 0]' ,'FaceAlpha',0.4, 'EdgeColor', 'none');
-set(seShoadowHASAP1JF635_1(2),'FaceColor',[1, 0, 1]' ,'FaceAlpha',0.2, 'EdgeColor', 'none');
-hold on;
-seShoadowHASAP1JF635_2 = area(t_mov(7:end), [(mean(dyHASAP1JF635(7:end,:), 2) - dyHASAP1JF635_sem(7:end)), (2 * dyHASAP1JF635_sem(7:end))]);
-set(seShoadowHASAP1JF635_2(1),'Visible','off');
-%set(seShoadow2_2(2),'FaceColor',[0.46, 0.68, 0.17]' ,'FaceAlpha',0.4, 'EdgeColor', 'none');
-set(seShoadowHASAP1JF635_2(2), 'FaceColor', [1, 0, 1]' , 'FaceAlpha',0.2, 'EdgeColor', 'none');
-plot1_1 = plot(t_mov(1:6), mean(dyArcLightA242(1:6,:),2), 'Color', name1color,'LineWidth',1.5);
-plot1_2 = plot(t_mov(7:end), mean(dyArcLightA242(7:end,:),2), 'Color', name1color,'LineWidth',1.5);
-plot2_1 = plot(t_mov(1:6), mean(dyHASAP1JF635(1:6,:),2), 'Color', name2color,'LineWidth',1.5);
-plot2_2 = plot(t_mov(7:end), mean(dyHASAP1JF635(7:end,:),2), 'Color', name2color,'LineWidth',1.5);
-legend([plot1_1, plot2_1], {'ArcLightA242', 'HASAP1JF635'}, 'Location','northoutside','Orientation','horizontal');
-
+plot_1 = plot(t_mov(1:6), mean(dymNeonCaaX(1:6,:),2), 'Color', name1color,'LineWidth',1.5);
+plot_2 = plot(t_mov(7:end), mean(dymNeonCaaX(7:end,:),2), 'Color', name1color,'LineWidth',1.5);
+legend([plot_1], {'mNonGreen-CaaX'}, 'Location','northoutside','Orientation','horizontal');
 box off
 % axis ([0 max(t) 0.90 1.30])
 axis tight
@@ -488,8 +469,8 @@ xlabel('Time (s)')
 ylabel('¦¤F/F0');
 set(gcf,'color','w');
 breakxaxis([150 1380]);
-saveas(gca,['X:\91 Data and analysis\YJunqi\Screening method\System test\Statistics\20220404_gramicidinSummary' '.fig']);
-saveas(gca,['X:\91 Data and analysis\YJunqi\Screening method\System test\Statistics\20220404_gramicidinSummary' '.png']);
+saveas(gca,['H:\Zoulab\YJunqi\Screening method\System test\Statistics\20220601_gramicidinSummary' '.fig']);
+saveas(gca,['H:\Zoulab\YJunqi\Screening method\System test\Statistics\20220601_gramicidinSummary' '.png']);
 
 
 figure()

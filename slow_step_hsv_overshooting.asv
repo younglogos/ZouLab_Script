@@ -1,7 +1,7 @@
 % parameters
 clear all;
-subfolder = '\';      
-basepath = 'H:\ZouLab\YJunqi\Sensitivity\Cephied\20220616 Sensitivity, kinetics & hyperpolarization response test\Dish2\cell1\184938_-100 to +100_500ms\';
+subfolder = '\';
+basepath = 'H:\ZouLab\YJunqi\Sensitivity\Cephied\20220616 Sensitivity, kinetics & hyperpolarization response test\Dish1\cell1\174910_-100 to +100_500ms\';
 pathname = [basepath subfolder];
 path = [basepath subfolder];
 

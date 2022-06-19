@@ -1,7 +1,7 @@
-name1 = 'Data00089_80%532nmPower_500Hz';
+name1 = 'Data00126_45%561nmPower';
 name1color = getrgb(550);
 bin = 4;
-basepath = 'H:\ZouLab\YJunqi\Application\Mouse\20220511 Aureole-ST-JF525 test in acute brain slice\Mouse1-slice1\Hippocamopus neuron1\Data00089';
+basepath = 'H:\ZouLab\YJunqi\Application\Mouse\20220612 Cepheid-ST in acute slice\Mouse1-slice2\Hippocampal neuron2\trace2';
 subfolder = '\';
 pathname = [basepath subfolder];
 %mkdir([pathname 'analysis']); 
@@ -54,7 +54,7 @@ saveas(gca,[pathname '\clicky analysis_voltage indicator.png']);
 % normalize intensity (in %)
 
 % import patch-clamp data
-patch = xlsread([pathname '2022_05_10_0000_5ms200PA_5Hz_10s.xlsx']);
+patch = xlsread([pathname '2022_06_09_0000_10ms200PA_5Hz_13s.xlsx']);
 patch(1:3, :) = [];
 %% Bandworth low-pass filter
 intens_nobkg = intens(:,1) - intens (:, end);
@@ -67,12 +67,12 @@ plot(intens_filter(1:end,:));
 
 %% Voltage imaging
 % bkg=intens(:,end);
-intens_filter1 = intens_filter(40:end,:);
+intens_filter1 = intens_filter(260:end,:);
 % intens_filter1 = intens_nobkg;
 intensN = zeros(size(intens_filter1,1),size(intens_filter1,2));
 pbleach = zeros(size(intens_filter1,1),size(intens_filter1,2));
 for i = 1: size(intens_filter1,2)
-    [intensN(:,i), pbleach(:,i)] = rem_pbleach(-1*(intens_filter1(:,i)), round(size(intens_filter1(:,i),1)/5)+1);
+    [intensN(:,i), pbleach(:,i)] = rem_pbleach(-1*(intens_filter1(:,i)), round(size(intens_filter1(:,i),1)/40)+1);
 %   [intensN(:,i), pbleach(:,i)] = rem_pbleach(-1*(intens(:,i)-bkg), round(size(intens(:,i),1)/5)+1);
     %intensN1(:,i) = intens(:,i) - bkg + power(pbleach1(:,i) - min(pbleach1(:,i)),0.5);
     %pbleach(:,i) = -1*power(abs(pbleach(:,i)+min(pbleach(:,i))),1);
