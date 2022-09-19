@@ -5,7 +5,7 @@
 %% Intialize parameters
 clear all; clc;
 % Movie loading path
-subfolder = 'D:\data\test\20220606 Kinetics, sensitivity & depolarization test\Dish4\cell3\235357_40xWideField_bin2';
+subfolder = 'H:\ZouLab\YJunqi\Sensitivity\Cepheid\20220718 Sensitivity, kinetics & depolarization titration\Dish1\cell1\173734_488+561nm_step';
 basepath = '';
 pathname = [basepath subfolder];
 % constants
@@ -48,7 +48,7 @@ ylabel('Whole-field Intensity')
 % photobleaching trace.  The raw intensity is divided element-wise by the photobleaching trace.
 % This function removes any baseline drift, not just photobleaching.
 % The smoothing window should exceed the interval between stimuli.
-[intensN, pbleach] = rem_pbleach(intens, frmPer*28+1);
+[intensN, pbleach] = rem_pbleach(intens, frmPer*20+1);
 % figure(2)'
 % plot(t_mov, intensN)
 % xlabel('Time') 
@@ -83,7 +83,7 @@ dt_daq = dt_mov/dnsamp;             % DAQ dt in millisecond
 t_daq = [0:length(Vm)-1]*dt_daq/10^3;       % DAQ time axis in second
 
 %% Kinetic analysis
-t_window_up = (0:frmWindow-1)*dt_mov;                    % millisecond
+t_window_up = (0:frmWindow-1)*dt_mov;      % millisecond
 t_window_dn = (0:frmWindow_dn-1)*dt_mov;                    % millisecond
 t_window=[0:0.9452:0.9452*0.5*(frmPer-1)];    
                % millisecond

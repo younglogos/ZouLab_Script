@@ -1,7 +1,7 @@
 % parameters
 clear all;
 subfolder = '\';      
-basepath = 'H:\ZouLab\YJunqi\Sensitivity\Cephied\20220616 Sensitivity, kinetics & hyperpolarization response test\Dish2\cell1\184938_-100 to +100_500ms\';
+basepath = 'H:\ZouLab\YJunqi\Sensitivity\20220908 F-V curve & depolarization test\Dish4\cell2\100129_-100 to +100_500ms\';
 pathname = [basepath subfolder];
 path = [basepath subfolder];
 
@@ -147,12 +147,12 @@ xlswrite([pathname 'analysis.xlsx'],mean(dy_base,1)','D2:D12');
 
 save([pathname 'All variants.mat']);
 %%
-figure();
+figure();   
 for n = 1:11
     plot(smooth([0:dt_mov:(1000-1)*dt_mov]',dy_stack(:,n), 30),'color',color_map(n,:));hold on
 end
 box off
-axis tight
+axis tight   
 xlabel('Time (ms)')
 ylabel('Dynamic range (from -70 mV)')
 saveas(gca,[path '\Dynamic_F-V stack_smoothStep30.fig']);

@@ -10,11 +10,11 @@ clear all
 %% load and select
 clear all; clc;
 % Movie loading path
-basepath = 'C:\Users\ZouOptics\Desktop\22.05.31\A0034\';
-subfolder = '005249_CQ\'
+basepath = 'H:\ZouLab\YJunqi\Sensitivity\';
+subfolder = '222551_200pA-10ms-80 times_(Baseline 0 pA)\'
 pathname = [basepath subfolder '\']
 a = importdata([pathname '\movie_DAQ.txt']);
-if exist([basepath '\patch param.txt'])
+if exist([basepath '\patch param.txt']) 
     b = importdata([basepath '\patch param.txt']);
     datab = b.data;
     Cm = datab(1,5);%pF
@@ -28,7 +28,7 @@ end
 
 dire = -1;% dire = 1 means positive GEVI; dire = -1 means negative GEVI
 
-load ([pathname '\Current injection_400pA-10ms-40 times_(Baseline 0 pA)\matlab variables.mat']);
+load ([pathname '\Current injection_200pA-10ms-80 times_(Baseline 0 pA)\matlab variables.mat']);
 % constants
 % cycles = 80;
 mode = 484;

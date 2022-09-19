@@ -11,8 +11,8 @@
 %% load and select
 clear all; clc;
 % Movie loading path
-basepath = 'H:\ZouLab\YJunqi\Sensitivity\Cephied\20220610 Response to action potentials\Dish1\cell3\';
-subfolder = '203821_200pA-10ms-80 times_(Baseline 0 pA)\'
+basepath = 'H:\ZouLab\YJunqi\Sensitivity\Cepheid\20220728 Response of sensors to action potentials\Dish1\neuron1\';
+subfolder = '184250_300pA-10ms-80 times_(Baseline 0 pA)\'
 pathname = [basepath subfolder '\']
 a = importdata([pathname '\movie_DAQ.txt']);
 if exist([basepath '\patch param.txt'])
@@ -29,7 +29,7 @@ end
 
 dire = -1;% dire = 1 means positive GEVI; dire = -1 means negative GEVI
 
-load ([pathname 'Current injection_200pA-10ms-80 times_(Baseline 0 pA)\matlab variables.mat']);
+load ([pathname 'Current injection_300pA-10ms-80 times_(Baseline 0 pA)\matlab variables.mat']);
 % constants
 % cycles = 80;
 mode = 484;
@@ -105,7 +105,8 @@ fname = [pathname movname];
 [mov, nframe] = readBinMov(fname, nrow, ncol);
 mov = double(mov);img = mean(mov, 3);
 
-% select ROI for analysis
+% select ROI for analysi
+% s
 [~, intens_raw] = clicky(mov, img, 'elect only 1 ROI, right click when done');
 background = mean(intens_raw(:,size(intens_raw,2)));
 title('Please left click twice for the boundary of X axis of the signal')
@@ -315,7 +316,7 @@ xlswrite([pathname 'electro_analysis.xlsx'],{pathname},'Average','B9');
 [intensN, pbleach] = rem_pbleach(dire*((intens(:,1)-intens(:,2))), round(4*size(intens_raw,1)/cycles)+1);% Remove the photobleaching, '-1' means find the max
 pbleach = dire*pbleach;
 %intensN = intens(:,1)-intens(:,2); % if we don't want to remove the
-% photobleaching and do the analysis, run this line before line 97
+% photobleaching and do the anaalysis, run this line before line 97
 intensN = intensN./mean(intensN(1:25));
 figure(2)
 plot(t_mov_selected, intensN)
@@ -574,7 +575,8 @@ ylabel('FWHM (ms)')
 title(['FWHM calculation from GEVI, upsampling rate = ' ,num2str(upsamplingrate)])
 saveas(gca,[pathname '\11 FWHM calculation_from GEVI.fig'])
 saveas(gca,[pathname '\11 FWHM calculation_from GEVI.png'])
-% kernel_stack_interp_mean = mean(kernel_stack_interp,2);
+% kernel_stack_interp_m
+ean = mean(kernel_stack_interp,2);
 % plot(kernel_stack_interp)% for the check
 figure()
 subplot(2,1,1)
